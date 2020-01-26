@@ -1,3 +1,6 @@
 .DS_store
 */.DS_store
 a.out
+*/a.out
+main.c
+*/main.c

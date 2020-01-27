@@ -1,3 +1,17 @@
-とりあえず空なので、消して作ってください。
 
-消して〜リライトして〜
+NAME = BSQ
+SRC = BSQ.c ./srcs/ft_*.c
+HEAD = ./includes/ft_*.h
+FLAG = -Wall -Wextra -Werror
+
+all:
+	gcc $(FLAG) $(SRC) $(HEAD) 
+
+clean:
+	/bin/rm -f *.o
+
+fclean:
+	/bin/rm -f $(NAME)
+
+re:
+	fclean all

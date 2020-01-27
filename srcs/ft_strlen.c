@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkomatsu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/13 22:22:39 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/19 21:46:22 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/27 12:26:05 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_tools_h"
+#include "../includes/ft_tools.h"
 
 int	ft_strlen(char *str)
 {

@@ -1,6 +1,7 @@
-#include "ft_tools.h"
+#include "./includes/ft_tools.h"
 
 int	main(int argc, char *argv[])
 {
-	return (0);
+	if (argc || argv)
+		return (0);
 }

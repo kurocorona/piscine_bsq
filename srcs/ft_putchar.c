@@ -6,12 +6,11 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/10 22:07:12 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/13 16:49:44 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/27 12:26:27 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "ft_tools_h"
+#include "../includes/ft_tools.h"
 
 void	ft_putchar(char c)
 {

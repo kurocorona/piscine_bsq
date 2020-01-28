@@ -22,13 +22,13 @@ typedef struct s_point
 
 typedef struct s_map
 {
-	int		line_count;
-	t_mark	mark;
-	char	**map;
-	t_point	start;
-	t_point	end;
-	int		sq_bool;
-	int		err;
+	int				line_count;
+	t_mark			mark;
+	char			**map;
+	t_point	s		tart;
+	t_point			end;
+	int				sq_bool;
+	unsigned int	err;
 }	t_map;
 
 void	ft_putchar(char c);

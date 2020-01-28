@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   BSQ.c                                              :+:      :+:    :+:   */
+/*   example_t_map.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/28 23:04:57 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/28 23:05:03 by tkomatsu         ###   ########.fr       */
+/*   Created: 2020/01/28 22:50:22 by tkomatsu          #+#    #+#             */
+/*   Updated: 2020/01/28 23:06:24 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/ft_tools.h"
+#include "../includes/ft_tools.h"
 
 t_map	*init_map_example(void)
 {
@@ -60,13 +60,4 @@ t_map	*init_map_example(void)
 	}
 
 	return (example);
-}
-
-int		main(void)
-{
-	t_map	*test;
-
-	test = init_map_example();
-	ft_putmap(test);
-	return (0);
 }

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_tools.h                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/28 22:42:25 by tkomatsu          #+#    #+#             */
+/*   Updated: 2020/01/28 23:03:47 by tkomatsu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FT_TOOLS_H
 # define FT_TOOLS_H
 
@@ -7,36 +19,33 @@
 #include <sys/types.h>
 #include <sys/uio.h>
 
-typedef struct s_mark
+typedef struct
 {
 	char	empty;
 	char	obstacle;
 	char	full;
 }	t_mark;
 
-typedef struct s_point
+typedef struct
 {
 	int		x;
 	int		y;
-};	t_point;
+}	t_point;
 
-typedef struct s_map
+typedef struct
 {
-	int				line_count;
+	int				lcnt;
 	t_mark			mark;
 	char			**map;
-	t_point	s		tart;
+	t_point			start;
 	t_point			end;
-	int				sq_bool;
+	unsigned int	sq_type;
 	unsigned int	err;
 }	t_map;
 
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
 int		ft_strlen(char *str);
-int		ft_count_line(char *filename);
-int		ft_putmap(t_map *ans);
-t_map	*ft_init_map(char *filename);
-t_map	*ft_insert_val(int fd, int *j, char *filename, int *i);
+void	ft_putmap(t_map *ans);
 
 #endif

@@ -13,7 +13,7 @@ typedef struct s_map
 	char	**map;
 	int		sq_point_s[2];
 	int		sq_point_l[2];
-	int		sp_bool;
+	int		sq_bool;
 	int		err;
 }			t_map;
 

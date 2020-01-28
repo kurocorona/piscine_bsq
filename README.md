@@ -74,14 +74,14 @@ rondom_seed = 邪魔オブジェクトの配置（ランダムになるので、
 ### map to file
 * 構造体がいい気がする
 	struct s_map{
-		int		line_count; ←mapの行数
-		char	*mark; ←記号のマーク
-		char	**map; ←mapの文字列の配列
-		int		sq_point_s[2]; ←スタートポイントのxy座標
-		int		sq_point_l[2]; ←エンドポイントのxy座標
-		int		sq_bool; ←四角形が正方形かひし形かの判断
-		int		err; 現時点で持っているエラー番号
-		}
+		int		line_count; ←mapの行数  
+		char	*mark; ←記号のマーク  
+		char	**map; ←mapの文字列の配列  
+		int		sq_point_s[2]; ←スタートポイントのxy座標  
+		int		sq_point_l[2]; ←エンドポイントのxy座標  
+		int		sq_bool; ←四角形が正方形かひし形かの判断  
+		int		err; 現時点で持っているエラー番号  
+		}  
 
 * なので、構造体の宣言をヘッダーファイルにつっこみましょう
 

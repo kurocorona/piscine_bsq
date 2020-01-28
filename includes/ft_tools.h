@@ -6,16 +6,30 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/uio.h>
+
+typedef struct s_mark
+{
+	char	empty;
+	char	obstacle;
+	char	full;
+}	t_mark;
+
+typedef struct s_point
+{
+	int		x;
+	int		y;
+};	t_point;
+
 typedef struct s_map
 {
 	int		line_count;
-	char	*mark;
+	t_mark	mark;
 	char	**map;
-	int		sq_point_s[2];
-	int		sq_point_l[2];
+	t_point	start;
+	t_point	end;
 	int		sq_bool;
 	int		err;
-}			t_map;
+}	t_map;
 
 void	ft_putchar(char c);
 void	ft_putstr(char *str);

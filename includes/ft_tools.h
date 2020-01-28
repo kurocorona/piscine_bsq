@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 22:42:25 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/29 01:50:53 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 07:56:20 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 
 #define ERR_MSG_1 "empty map!!"
 #define ERR_MSG_2 "malloc error"
+#define ERR_MSG_3 "empty answer"
 
 typedef struct
 {
@@ -49,6 +50,7 @@ typedef struct
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
 int		ft_strlen(char *str);
+/*void	ft_rwmap(t_map *res);*/
 void	ft_putmap(t_map *ans);
 
 #endif

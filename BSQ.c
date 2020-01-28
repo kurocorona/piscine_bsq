@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 23:04:57 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/28 23:05:03 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 07:54:53 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ t_map	*init_map_example(void)
 	col_cnt = 15;
 	if (!(example = (t_map*)malloc(sizeof(t_map))))
 	{
-		ft_putstr("malloc error");
+		ft_putstr(ERR_MSG_2);
 		example->err = 2;
 		return (example);
 	}
@@ -37,7 +37,7 @@ t_map	*init_map_example(void)
 	example->err = 0;
 	if (!(example->map = (char**)malloc(sizeof(char*) * example->lcnt)))
 	{
-		ft_putstr("malloc error");
+		ft_putstr(ERR_MSG_2);
 		example->err = 2;
 		return (example);
 	}
@@ -46,7 +46,7 @@ t_map	*init_map_example(void)
 	{
 		if (!(example->map[i] = (char*)malloc(sizeof(char) * col_cnt)))
 		{
-			ft_putstr("malloc error");
+			ft_putstr(ERR_MSG_2);
 			example->err = 2;
 			return (example);
 		}
@@ -67,6 +67,6 @@ int		main(void)
 	t_map	*test;
 
 	test = init_map_example();
-	ft_putmap(test);
-	return (0);
+	ft_rwmap(test);
+	return (test->err);
 }

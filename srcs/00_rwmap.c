@@ -1,34 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putmap.c                                        :+:      :+:    :+:   */
+/*   ft_rwmap.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/28 09:16:28 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/29 07:50:27 by tkomatsu         ###   ########.fr       */
+/*   Created: 2020/01/29 07:32:02 by tkomatsu          #+#    #+#             */
+/*   Updated: 2020/01/29 07:53:20 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_tools.h"
 
-void	ft_putmap(t_map *ans)
+void	ft_rwmap(t_map *res)
 {
 	int	i;
+	int	k;
 
-	if (ans->lcnt == 0)
+	if (res->end.x - res->start.x == 0 || res->end.y - res->start.y == 0)
 	{
-		ft_putstr(ERR_MSG_1);
-		ans->err = 1;
+		ft_putstr(ERR_MSG_3);
+		res->err = 3;
+		return;
 	}
-	else
+	i = res->start.x;
+	while (res->start.x <= i && i <= res->end.x)
 	{
-		i = 0;
-		while (i < ans->lcnt)
+		k = res->start.y;
+		while (res->end.y <= i && i <= res->end.y)
 		{
-			ft_putstr(ans->map[i]);
-			ft_putstr("\n");
-			i++;
+			res->map[i][k] = res->mark.full;
+			k++;
 		}
+		i++;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 09:16:28 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/28 23:00:15 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 01:51:49 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putmap(t_map *ans)
 
 	if (ans->lcnt == 0)
 	{
-		ft_putstr("!empty map!");
+		ft_putstr(ERR_MSG_1);
 		ans->err = 1;
 	}
 	else

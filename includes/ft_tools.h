@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 22:42:25 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/28 23:03:47 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 01:50:53 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/uio.h>
+
+#define ERR_MSG_1 "empty map!!"
+#define ERR_MSG_2 "malloc error"
 
 typedef struct
 {

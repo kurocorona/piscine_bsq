@@ -72,7 +72,7 @@ rondom_seed = 邪魔オブジェクトの配置（ランダムになるので、
 * オブジェクトファイルにするみたいなところが必要かわからん
 
 ### map to file
-* 構造体がいい気がする
+* 構造体がいい気がする  
 	struct s_map{  
 		int		line_count; ←mapの行数  
 		char	*mark; ←記号のマーク  

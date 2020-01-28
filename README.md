@@ -73,7 +73,7 @@ rondom_seed = 邪魔オブジェクトの配置（ランダムになるので、
 
 ### map to file
 * 構造体がいい気がする
-	struct s_map{
+	struct s_map{  
 		int		line_count; ←mapの行数  
 		char	*mark; ←記号のマーク  
 		char	**map; ←mapの文字列の配列  

@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 23:04:57 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/29 11:07:20 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 14:56:25 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,10 @@
 int		main(void)
 {
 	t_map	*test;
+	t_map	val;
 
-	test = init_map_example();
+	val = init_map_example();
+	test = &val;
 	ft_putmap(test);
 	return (test->err);
 }

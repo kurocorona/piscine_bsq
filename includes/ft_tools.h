@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 22:42:25 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/29 12:17:40 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 14:56:05 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ typedef struct s_map
 	unsigned long	lcnt;
 	unsigned long	ccnt;
 	t_mark			mark;
-	unsigned long	**map;
+	unsigned long	map[10][10];
 	t_point			start;
 	unsigned long	len;
 	unsigned int	sq_type;

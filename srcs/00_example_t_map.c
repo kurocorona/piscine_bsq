@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 22:50:22 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/29 15:00:15 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 15:23:07 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_map	init_map_example(void)
 	unsigned long	k;
 
 	example.lcnt = 20;
-	example.ccnt = 15;
+	example.rcnt = 15;
 	example.mark.empty = '.';
 	example.mark.obstacle = 'x';
 	example.mark.full = 'o';
@@ -32,7 +32,7 @@ t_map	init_map_example(void)
 	while (i < example.lcnt)
 	{
 		k = 0;
-		while (k < example.ccnt)
+		while (k < example.rcnt)
 		{
 			example.map[i][k] = 0;
 			k++;

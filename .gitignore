@@ -5,3 +5,4 @@ a.out
 main.c
 */main.c
 !./srcs/ft_*.c
+*/*.gch

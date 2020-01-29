@@ -22,6 +22,7 @@
 #define ERR_MSG_1 "empty map!!"
 #define ERR_MSG_2 "malloc error"
 #define ERR_MSG_3 "empty answer"
+#define ERR_MSG_4 "line error"
 
 typedef struct s_mark
 {
@@ -52,5 +53,9 @@ void	ft_putchar(char c);
 void	ft_putstr(char *str);
 int		ft_strlen(char *str);
 void	ft_putmap(t_map *ans);
+void	ft_modify_endofline(char *record);
+int		ft_atoi(char *str);
+int		check_only_number(char *str);
+void	ft_first_line_atoi(char *str, t_map *board);
 
 #endif

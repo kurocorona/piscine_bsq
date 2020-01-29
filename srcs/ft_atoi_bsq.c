@@ -32,7 +32,6 @@ int		ft_atoi(char *str)
 
 	result = 0;
 	sign = 1;
-
 	while (*str >= '0' && *str <= '9')
 	{
 		result = result * 10;

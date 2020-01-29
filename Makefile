@@ -16,3 +16,7 @@ clean:
 .PHONY:fclean
 fclean:
 	/bin/rm -f $(NAME) ./includes/ft_tools.h.gch *.o
+
+.PHONY:re
+re:
+	all fclean

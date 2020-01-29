@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 22:50:22 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/29 15:35:41 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 15:49:52 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,29 +15,29 @@
 t_map	init_map_example(void)
 {
 	t_map			example;
-	unsigned long	i;
-	unsigned long	k;
+	unsigned long	x;
+	unsigned long	y;
 
-	example.lcnt = 100;
-	example.rcnt = 0;
+	example.lcnt = 30;
+	example.rcnt = 30;
 	example.mark.empty = '.';
 	example.mark.obstacle = 'x';
 	example.mark.full = 'o';
-	example.start.x = 10;
-	example.start.y = 10;
-	example.len = 5;
+	example.start.x = 0;
+	example.start.y = 0;
+	example.len = 0;
 	example.sq_type = 0;
 	example.err = 0;
-	i = 0;
-	while (i < example.lcnt)
+	y = 0;
+	while (y < example.lcnt)
 	{
-		k = 0;
-		while (k < example.rcnt)
+		x = 0;
+		while (x < example.rcnt)
 		{
-			example.map[i][k] = 0;
-			k++;
+			example.map[y][x] = 0;
+			x++;
 		}
-		i++;
+		y++;
 	}
 
 	return (example);

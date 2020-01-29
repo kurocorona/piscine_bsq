@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 22:50:22 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/29 10:04:06 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 12:07:34 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,12 @@ t_map	*init_map_example(void)
 	col_cnt = 15;
 	if (!(example = (t_map*)malloc(sizeof(t_map))))
 	{
-		ft_putstr("malloc error");
+		ft_putstr(ERR_MSG_2);
 		example->err = 2;
 		return (example);
 	}
 	example->lcnt = 20;
+	example->lcnt = 15;
 	example->mark.empty = '.';
 	example->mark.obstacle = 'x';
 	example->mark.full = 'o';
@@ -34,18 +35,18 @@ t_map	*init_map_example(void)
 	example->len = 5;
 	example->sq_type = 0;
 	example->err = 0;
-	if (!(example->map = (char**)malloc(sizeof(char*) * example->lcnt)))
+	if (!(example->map = (unsigned long**)malloc(sizeof(unsigned long*) * example->lcnt)))
 	{
-		ft_putstr("malloc error");
+		ft_putstr(ERR_MSG_2);
 		example->err = 2;
 		return (example);
 	}
 	i = 0;
 	while (i < example->lcnt)
 	{
-		if (!(example->map[i] = (char*)malloc(sizeof(char) * col_cnt)))
+		if (!(example->map[i] = (unsigned long*)malloc(sizeof(unsigned long) * col_cnt)))
 		{
-			ft_putstr("malloc error");
+			ft_putstr(ERR_MSG_2);
 			example->err = 2;
 			return (example);
 		}
@@ -54,7 +55,7 @@ t_map	*init_map_example(void)
 	i = 0;
 	while (i < example->lcnt)
 	{
-		example->map[i] = ".......x...x.x";
+		example->map[i][2] = 1;
 		i++;
 	}
 

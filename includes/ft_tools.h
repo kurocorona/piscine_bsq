@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 22:42:25 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/29 11:29:22 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 12:17:40 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,20 +23,20 @@
 #define ERR_MSG_2 "malloc error"
 #define ERR_MSG_3 "empty answer"
 
-typedef struct
+typedef struct s_mark
 {
 	char	empty;
 	char	obstacle;
 	char	full;
 }	t_mark;
 
-typedef struct
+typedef struct s_point
 {
 	unsigned long	x;
 	unsigned long	y;
 }	t_point;
 
-typedef struct
+typedef struct s_map
 {
 	unsigned long	lcnt;
 	unsigned long	ccnt;

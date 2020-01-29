@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 22:42:25 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/29 10:03:18 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 11:29:22 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,9 @@ typedef struct
 typedef struct
 {
 	unsigned long	lcnt;
+	unsigned long	ccnt;
 	t_mark			mark;
-	char			**map;
+	unsigned long	**map;
 	t_point			start;
 	unsigned long	len;
 	unsigned int	sq_type;
@@ -50,7 +51,6 @@ typedef struct
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
 int		ft_strlen(char *str);
-void	ft_rwmap(t_map *res);
 void	ft_putmap(t_map *ans);
 
 #endif

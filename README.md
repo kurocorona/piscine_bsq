@@ -49,12 +49,13 @@ typedef struct s_point	mapで座標を表す構造体（B）
 typedef struct s_map
 {
 	unsigned long	lcnt;		1. 行数を入れる（inputから判断）
-	t_mark			mark;		2. (A)を表す
-	unsigned long	**map;		3. マップの中身を表す（数値の配列）
-	t_point			start;		4. 回答の四角の右下の点（始点）
-	unsigned long	len;		5. 回答の四角の長さ
-	unsigned int	sq_type;	6. 回答の四角が回転する時を判断する為の入れ物（余裕があれば作るだけで、ひとまず0を入れて進めてください
-	unsigned int	err;		7. エラー番号を入れていきます。何か問題が起こったら番号を決めて入れてください
+	unsigned long	ccnt;		2. 1行の文字数を入れる（inputから判断）
+	t_mark			mark;		3. (A)を表す
+	unsigned long	**map;		4. マップの中身を表す（数値の配列）
+	t_point			start;		5. 回答の四角の右下の点（始点）
+	unsigned long	len;		6. 回答の四角の長さ
+	unsigned int	sq_type;	7. 回答の四角が回転する時を判断する為の入れ物（余裕があれば作るだけで、ひとまず0を入れて進めてください
+	unsigned int	err;		8. エラー番号を入れていきます。何か問題が起こったら番号を決めて入れてください
 }	t_map;
 
 マップは数値の羅列にします。0は邪魔なオブジェクト（obstacle）をあらわし、1はフリーの場所をあらわします。詳しくはまっちゃんの説明を聞いてもらいたいです。

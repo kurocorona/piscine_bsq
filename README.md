@@ -41,17 +41,17 @@ typedef struct s_mark	mapで使われる記号を表す構造体（A)
 
 typedef struct s_point	mapで座標を表す構造体（B）
 {
-	int		x;			x座標
-	int		y;			y座標
+	unsigned long	x;			x座標
+	unsigned long	y;			y座標
 };	t_point;
 
 typedef struct s_map
 {
-	int				lcnt;		1. 行数を入れる（inputから判断）
+	unsigned long	lcnt;		1. 行数を入れる（inputから判断）
 	t_mark			mark;		2. (A)を表す
 	char			**map;		3. マップの中身を表す（文字列の配列）
-	t_point			start;		4. 回答の四角の左上の点（始点）
-	t_point			end;		5. 回答の四角の右下の点（終点）
+	t_point			start;		4. 回答の四角の右下の点（始点）
+	unsigned long	len;		5. 回答の四角の長さ
 	unsigned int	sq_type;	6. 回答の四角が回転する時を判断する為の入れ物（余裕があれば作るだけで、ひとまず0を入れて進めてください
 	unsigned int	err;		7. エラー番号を入れていきます。何か問題が起こったら番号を決めて入れてください
 }	t_map;

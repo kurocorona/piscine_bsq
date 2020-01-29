@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 22:42:25 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/29 07:56:20 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 09:50:18 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,17 +32,17 @@ typedef struct
 
 typedef struct
 {
-	int		x;
-	int		y;
+	unsigned long	x;
+	unsigned long	y;
 }	t_point;
 
 typedef struct
 {
-	int				lcnt;
+	unsigned long	lcnt;
 	t_mark			mark;
 	char			**map;
 	t_point			start;
-	t_point			end;
+	unsigned long	len;
 	unsigned int	sq_type;
 	unsigned int	err;
 }	t_map;

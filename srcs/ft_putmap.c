@@ -6,7 +6,7 @@
 /*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 09:16:28 by tkomatsu          #+#    #+#             */
-/*   Updated: 2020/01/29 15:22:59 by tkomatsu         ###   ########.fr       */
+/*   Updated: 2020/01/29 15:35:34 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_putmap(t_map *ans)
 	unsigned long	i;
 	unsigned long	k;
 
-	if (ans->lcnt == 0)
+	if (ans->lcnt == 0 || ans->rcnt == 0)
 	{
 		ft_putstr(ERR_MSG_1);
 		ans->err = 1;

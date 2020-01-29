@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_get_file_size.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mryoya <mryoya@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tkomatsu <tkomatsu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 14:59:58 by mryoya            #+#    #+#             */
-/*   Updated: 2020/01/29 15:00:05 by mryoya           ###   ########.fr       */
+/*   Updated: 2020/01/29 15:30:21 by tkomatsu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/ft_tools.h"
 
 int	ft_get_file_size(int fd, int *row_counter, int *line_size)
 {
@@ -17,6 +19,7 @@ int	ft_get_file_size(int fd, int *row_counter, int *line_size)
 	int		char_count;
 	char	c;
 
+	row_count = 0;
 	*row_counter = 0;
 	char_count = 0;
 	*line_size = 0;
